@@ -5,8 +5,11 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class BrowserUtils {
@@ -73,6 +76,41 @@ public class BrowserUtils {
         //Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.invisibilityOf(webElement));
+
+    }
+
+    /**
+     * This method will accept a dropdown as a WebElement
+     * and return all the options' text in a List of String.
+     * @param expectedInURL
+     * @return List<String> actualOptionsAsString
+     */
+    public static void verifyURLContains(String expectedInURL){
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInURL));
+    }
+
+    /**
+     * This method will accept a dropdown as a WebElement and
+     * return all the options' text in a List of String
+     * @param dropdownElement
+     * @return
+     */
+
+    public static List<String> dropdownOptionsAsString(WebElement dropdownElement){
+
+        Select select =new Select(dropdownElement);
+
+        //List of all ACTUAL month <options> as a web element
+        List<WebElement> actualOptionsAsWebElement = select.getOptions();
+
+        //List of all ACTUAL month <options> as a string
+        List<String> actualOptionsAsString = new ArrayList<>();
+
+        for (WebElement each : actualOptionsAsWebElement) {
+            actualOptionsAsString.add(each.getText());
+        }
+
+        return actualOptionsAsString;
 
     }
 
