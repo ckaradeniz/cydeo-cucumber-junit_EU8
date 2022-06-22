@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d2d57-c809-4c7e-b4f4-8202f6ba521c" name="Changes" comment="day 04">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/classNotes/day05.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/ViewAllOrdersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/FailedTestRunner.java" afterDir="false" />
+    <list default="true" id="7f8d2d57-c809-4c7e-b4f4-8202f6ba521c" name="Changes" comment="day 05">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/classNotes/day06.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/pages/OrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Order_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/step_definitions/Order_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/BrowserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cydeo/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/webTableOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/webTableOrder.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +41,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "page.object.configurable"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="Feature: wikiSearch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/wikiSearch.feature" />
-      <option name="GLUE" value="com.cydeo.step_definitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="cydeo-cucumber-junit_EU8" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: wikiSearch" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Positive login scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/webTableLogin.feature" />
@@ -147,13 +127,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cydeo-cucumber-junit_EU8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cydeo.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cydeo.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.cydeo.runners.FailedTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="JUnit.FailedTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Positive login scenario" />
         <item itemvalue="Cucumber Java.Scenario: Wikipedia Search Functionality Header Verification" />
         <item itemvalue="Cucumber Java.Scenario: Wikipedia Search Functionality Title Verification" />
-        <item itemvalue="Cucumber Java.Feature: wikiSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +168,7 @@
       <workItem from="1655118938085" duration="9183000" />
       <workItem from="1655139945409" duration="29812000" />
       <workItem from="1655478917653" duration="54941000" />
-      <workItem from="1655745498597" duration="19957000" />
+      <workItem from="1655745498597" duration="27505000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1655140002130</created>
@@ -203,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655656132801</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day 05">
+      <created>1655898774315</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655898774315</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +227,8 @@
     <MESSAGE value="day 16" />
     <MESSAGE value="day 3" />
     <MESSAGE value="day 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 04" />
+    <MESSAGE value="day 05" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 05" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
